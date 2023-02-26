@@ -49,6 +49,7 @@ Una vez hayas escrito el comando en el archivo package.json, la manera de ejecut
 **UNMET DEPENDECY :** dependencia no instalada, cuando haces el npm install, se instala la ultima version.
 
 A veces tendremos que actualizar en pares las dependencias para que no haya conflicto.
+
 <br>
 
 
@@ -65,3 +66,25 @@ al instalar una dependencia nos puede salir una linea de vulnerabilidades (moder
 + **[npm audit fix --force]**: intentar de todo para poder evitar las vulnerabilidades
 
 si con el fix --force sigue habiendo vulnerabilidades, podemos probar actualizar los paquetes a la version mas reciente o que el audit fix --force nos diga que actualizemos
+
+<br>
+
+
+## **Eliminacion de dependencias y Package Lock**
+
+**[npm uninstall _____]:** Elimina la dependencia que queramos.
+
+**[rm -rg node_modules/]:** Eliminar todo lo que estemos usando y volver a instalar todo el proyecto
+
+Tambien podemos eliminar manualmente desde el 'package.json'. Pero despues tendremos que hacer un npm install.
+
+	1. rm -rg node_modules/
+	2. npm install
+
+**[npm run build]:** Preparar el proyecto para produccion. Nos entrega una serie de recursos que nos permite saber que paso, que archivos creó, etc.
+
+**[npm run build --dd]:** Nos muestra mas informacion de lo que esta haciendo.
+
+**[npm ci]:** Muestra librerias defectuosas o que no se van a actualizar mas.
+
+**Package Lock:** El archivo package-lock.json describe todo el árbol de dependencias de cada paquete instalado.
