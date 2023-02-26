@@ -12,5 +12,11 @@
     "node"
   ],
   "author": "David Sanchez Romero <dsebastiansr24@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.34.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
 }
