@@ -6,10 +6,7 @@
 
 + **Paquetes globales [-g]** : ligados a nuesro OS
 <br>
-<<<<<<< HEAD
 
-=======
->>>>>>> 0378c5e315c3bf2a5c0325648d3b9f926f3e77cb
 
 ## **Instalacion de dependencias de versiones especificas**
 
@@ -21,10 +18,7 @@
 
 + **[npm install ______@latest]** : Actualiza la dependencia a la ultima version que haya
 <br>
-<<<<<<< HEAD
 
-=======
->>>>>>> 0378c5e315c3bf2a5c0325648d3b9f926f3e77cb
 
 ## **Comandos de NPM (Scripts)** ##
 
@@ -41,7 +35,7 @@ Para crear un comando en tu proyecto, utiliza la siguiente estructura, donde es 
 Una vez hayas escrito el comando en el archivo package.json, la manera de ejecutarlo en la terminal será con el comando npm run <nombre>.
 
 + **[npx]**: ejecutar acciones particulares sin necesidad de pasar por la instalacion, o sea que si nosotros queremos hacer un proyecto nuevo. [npx] [accion] [argumento]
-<<<<<<< HEAD
+
 <br>
 
 
@@ -55,5 +49,19 @@ Una vez hayas escrito el comando en el archivo package.json, la manera de ejecut
 **UNMET DEPENDECY :** dependencia no instalada, cuando haces el npm install, se instala la ultima version.
 
 A veces tendremos que actualizar en pares las dependencias para que no haya conflicto.
-=======
->>>>>>> 0378c5e315c3bf2a5c0325648d3b9f926f3e77cb
+<br>
+
+
+## **Seguridad y solución de problemas**
+
+al instalar una dependencia nos puede salir una linea de vulnerabilidades (moderado, alto, critico)
+
++ **[npm audit]**: nos brinda informacion para tomar desicion de que va a pasar
+
++ **[npm audit --json]**: nos brinda informacion mas detallada en forma de un objeto 
+
++ **[npm audit fix]**: procede a actualizar los recursos necesarios para que no tengamos vulnerabilidades, nos entrega un recurso que nos muestra que elementos quedan
+
++ **[npm audit fix --force]**: intentar de todo para poder evitar las vulnerabilidades
+
+si con el fix --force sigue habiendo vulnerabilidades, podemos probar actualizar los paquetes a la version mas reciente o que el audit fix --force nos diga que actualizemos
