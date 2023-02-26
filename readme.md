@@ -1,9 +1,3 @@
-<style>
-	body {font-family: 'Fira Code', Consolas; font-size: 12px; line-height: 34px; text-align: justify;}
-	h2:first-of-type {margin-top: 30px}
-	h2 {margin-top: 60px; color: #2b64e0}
-</style>
-
 ## **Instalacion de dependencias**
 
 + **[--save-dev]** o **[-D]**: guardar como dependencia que solamente sera utilizada en el entorno de desarollo y nunca sera llevada a produccion.
@@ -11,7 +5,7 @@
 + **[--save]** o **[-S]**: guardar dependencia para ser llevada a produccion.
 
 + **Paquetes globales [-g]** : ligados a nuesro OS
-
+<br>
 
 ## **Instalacion de dependencias de versiones especificas**
 
@@ -22,6 +16,7 @@
 + **[npm install ______@version]** : Instala una dependencia en la version que nosotros especifiquemos
 
 + **[npm install ______@latest]** : Actualiza la dependencia a la ultima version que haya
+<br>
 
 ## **Comandos de NPM (Scripts)** ##
 
